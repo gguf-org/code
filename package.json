@@ -1,0 +1,114 @@
+{
+	"name": "gguf-code",
+	"displayName": "gguf code",
+	"description": "Monster coding agent lives in your IDE",
+	"version": "0.0.1",
+	"publisher": "gguf",
+	"author": {
+		"name": "gguf",
+		"email": "info@gguf.us"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/mochiyaki/code",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mochiyaki/code.git"
+	},
+	"icon": "assets/images/icon.png",
+	"engines": {
+		"vscode": "^1.104.0"
+	},
+	"categories": [
+		"Machine Learning",
+		"Other"
+	],
+	"keywords": [
+		"ai",
+		"cli",
+		"code",
+		"gguf"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "coder-sidebar",
+					"title": "Code",
+					"icon": "assets/images/icon2.png"
+				}
+			]
+		},
+		"views": {
+			"coder-sidebar": [
+				{
+					"type": "webview",
+					"id": "coder.sidebarView",
+					"name": "Code",
+					"icon": "assets/images/icon2.png"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "coder.openWebview",
+				"title": "Open Coder",
+				"icon": "assets/images/logo3.png"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "coder.openWebview",
+					"when": "editorFocus",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"package": "npm run build:webview && esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+		"build": "npm run build:webview && esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
+		"watch": "concurrently \"npm run watch:webview\" \"esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --watch\"",
+		"build:webview": "vite build --config vite.config.ts",
+		"watch:webview": "vite build --config vite.config.ts --watch",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@types/vscode": "^1.104.0",
+		"@types/ws": "^8.5.10",
+		"@vitejs/plugin-react": "^5.1.2",
+		"@vscode/vsce": "^3.7.0",
+		"concurrently": "^9.2.1",
+		"esbuild": "^0.27.2",
+		"eslint": "^8.57.0",
+		"typescript": "^5.3.0",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@ai-sdk/openai-compatible": "^2.0.4",
+		"@modelcontextprotocol/sdk": "^1.25.2",
+		"@types/turndown": "^5.0.6",
+		"@vscode/webview-ui-toolkit": "^1.4.0",
+		"ai": "^6.0.23",
+		"cheerio": "^1.1.2",
+		"dotenv": "^17.2.3",
+		"lucide-react": "^0.562.0",
+		"pino": "^10.1.0",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3",
+		"react-markdown": "^10.1.0",
+		"remark-gfm": "^4.0.1",
+		"turndown": "^7.2.2",
+		"undici": "^7.18.2",
+		"ws": "^8.16.0",
+		"zod": "^4.3.5"
+	}
+}

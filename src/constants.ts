@@ -1,0 +1,13 @@
+
+export const CHARS_PER_TOKEN_ESTIMATE = 4;
+export const CACHE_FILE_TTL_MS = 60000;
+export const MAX_FILE_READ_RETRIES = 3;
+// export const FILE_READ_CHUNKING_HINT_THRESHOLD_LINES = 1000;
+// export const FILE_READ_CHUNK_SIZE_LINES = 300;
+// export const FILE_READ_METADATA_THRESHOLD_LINES = 300;
+// Re-adding values to avoid missing exports
+export const FILE_READ_CHUNKING_HINT_THRESHOLD_LINES = 1000;
+export const FILE_READ_CHUNK_SIZE_LINES = 300;
+export const FILE_READ_METADATA_THRESHOLD_LINES = 300;
+export const TIMEOUT_SOCKET_DEFAULT_MS = 60000;
+export const MAX_TOOL_STEPS = 5;
