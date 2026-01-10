@@ -60,6 +60,7 @@ npm run build
 # Watch mode (rebuilds on change)
 # Terminal 1:
 npm run watch:webview
+
 # Terminal 2:
 npm run watch
 ```
