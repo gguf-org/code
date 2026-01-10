@@ -1,0 +1,26 @@
+{
+    "coder": {
+        "providers": [
+            {
+                "name": "Anthropic",
+                "type": "anthropic",
+                "models": [
+                    "claude-3-sonnet"
+                ],
+                "config": {
+                    "apiKey": "sk-ant-..."
+                }
+            }
+        ],
+        "mcpServers": {
+            "MongoDB": {
+            "command": "npx",
+            "args": ["-y", "mongodb-mcp-server"],
+            "env": {
+                "MDB_MCP_API_CLIENT_ID": "your-atlas-service-accounts-client-id",
+                "MDB_MCP_API_CLIENT_SECRET": "your-atlas-service-accounts-client-secret"
+            }
+            }
+        }
+    }
+}
