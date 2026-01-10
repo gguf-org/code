@@ -15,8 +15,8 @@ npm run build
    - Select the `vscode` folder
 
 ### 3. Open the Extension
-- Click the Coder icon in the Activity Bar (left sidebar)
-- Or use Command Palette: "Open Coder"
+- Click the Code icon in the Activity Bar (left sidebar)
+- Or use Command Palette: "Open Code"
 
 ## Quick Tests
 
@@ -38,7 +38,7 @@ npm run build
 **Action**: Look at the header
 
 **Expected Behavior**:
-- Code icon (⚙️) appears next to "CODER"
+- Code icon appears next to "CODE"
 - Clear button shows trash icon
 - Settings button shows gear icon
 
@@ -116,7 +116,7 @@ Create `coder.config.json` in workspace root:
 }
 ```
 
-Check Output panel → "Coder" to see MCP connection status.
+Check Output panel → "Code" to see MCP connection status.
 
 ---
 
@@ -129,7 +129,7 @@ Check Output panel → "Coder" to see MCP connection status.
 
 ### Issue: Commands not executing
 **Solution**:
-1. Check Output panel → "Coder" for errors
+1. Check Output panel → "Code" for errors
 2. Verify workspace folder is open
 3. Check permission prompts in webview
 
