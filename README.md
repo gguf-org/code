@@ -2,6 +2,8 @@
 
 Monster coding agent lives in your IDE - moving beyond a CLI bridge to a fully native IDE AI assistant.
 
+![screenshot](https://raw.githubusercontent.com/mochiyaki/code/master/demo.gif)
+
 ## Features
 
 - **Native Chat Interface**: Deeply integrated React-based webview for smooth chat interactions inside VS Code.
