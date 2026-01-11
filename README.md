@@ -4,7 +4,7 @@ Monster coding agent lives in your IDE - moving beyond a CLI bridge to a fully n
 
 ![screenshot](https://raw.githubusercontent.com/mochiyaki/code/master/demo.gif)
 
-Just shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemName=gguf.gguf-code) and it's compatible IDEs marketplaces - [open vsx](https://open-vsx.org/extension/gguf/gguf-code)
+Just shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemName=gguf.gguf-code) and it's compatible IDEs [marketplaces - open vsx](https://open-vsx.org/extension/gguf/gguf-code)
 
 ## Features
 
