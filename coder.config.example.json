@@ -6,7 +6,7 @@
                 "type": "openai",
                 "models": [
                     "gpt-4-turbo",
-                    "gpt-3.5-turbo"
+                    "gpt-4o"
                 ],
                 "config": {
                     "apiKey": "sk-..."
@@ -16,8 +16,8 @@
                 "name": "Anthropic",
                 "type": "anthropic",
                 "models": [
-                    "claude-3-opus",
-                    "claude-3-sonnet"
+                    "claude-4-opus",
+                    "claude-4-sonnet"
                 ],
                 "config": {
                     "apiKey": "sk-ant-..."
