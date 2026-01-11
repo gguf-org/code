@@ -8,7 +8,7 @@ Just shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?
 
 ## Features
 
-- **Native Chat Interface**: Deeply integrated React-based webview for smooth chat interactions inside VS Code.
+- **Native Chat Interface**: Deeply integrated webview clean ui for smooth chat interactions inside VS Code (and/or its clone/fork IDEs).
 - **Embedded AI Engine**: Run Coder's powerful AI logic directly within the extension process - no external CLI tool required.
 - **Project-Aware Context**: Automatically understands your workspace structure and active files.
 - **Smart Tools**:
