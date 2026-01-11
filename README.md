@@ -33,7 +33,7 @@ Just shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?
           "name": "openrouter",
           "baseUrl": "https://openrouter.ai/api/v1",
           "apiKey": "your-api-key",
-          "models": ["anthropic/claude-3.5-sonnet"]
+          "models": ["anthropic/claude-4.5-sonnet"]
         }
       ]
     }
