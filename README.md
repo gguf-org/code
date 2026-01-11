@@ -25,7 +25,7 @@ Just shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?
 ## Getting Started
 
 1.  **Installation**: Install the extension from the VS Code Marketplace or via `.vsix`.
-2.  **Configuration**: Ensure you have a `coder.config.json` in your project root.
+2.  **Configuration**: Ensure you have a `coder.config.json` in your project root (see example below, can be any OpenAI compatible API or local/self-hosted API).
     ```json
     {
       "providers": [
