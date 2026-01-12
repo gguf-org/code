@@ -28,14 +28,16 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
 2.  **Configuration**: Ensure you have a `coder.config.json` in your project root (see example below, can be any OpenAI compatible API or local/self-hosted API).
     ```json
     {
-      "providers": [
-        {
-          "name": "openrouter",
-          "baseUrl": "https://openrouter.ai/api/v1",
-          "apiKey": "your-api-key",
-          "models": ["anthropic/claude-4.5-sonnet"]
-        }
-      ]
+      "coder": {
+          "providers": [
+            {
+              "name": "openrouter",
+              "baseUrl": "https://openrouter.ai/api/v1",
+              "apiKey": "your-api-key",
+              "models": ["anthropic/claude-4.5-sonnet"]
+            }
+          ]
+      }
     }
     ```
     lmstudio (localhost) example:
