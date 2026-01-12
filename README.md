@@ -38,6 +38,39 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
       ]
     }
     ```
+    lmstudio (localhost) example:
+    ```json
+    {
+      "coder": {
+        "providers": [
+          {
+            "name": "lmstudio",
+            "models": [
+              "openai/gpt-oss-20b"
+            ],
+            "baseUrl": "http://localhost:1234/v1"
+          }
+        ]
+      }
+    }
+    ```
+    ollama (localhost) example:
+    ```json
+    {
+      "coder": {
+        "providers": [
+          {
+            "name": "ollama",
+            "models": [
+              "gpt-oss:20b"
+            ],
+            "baseUrl": "http://localhost:11434/v1"
+          }
+        ]
+      }
+    }
+    ```
+    
 3.  **Launch**: Click the "Code" monster icon in the Activity Bar (left sidebar) to open the chat.
 
 ## Usage
