@@ -26,20 +26,7 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
 
 1.  **Installation**: Install the extension from the VS Code Marketplace or via `.vsix`.
 2.  **Configuration**: Ensure you have a `coder.config.json` in your project root (see example below, can be any OpenAI compatible API or local/self-hosted API).
-    ```json
-    {
-      "coder": {
-          "providers": [
-            {
-              "name": "openrouter",
-              "baseUrl": "https://openrouter.ai/api/v1",
-              "apiKey": "your-api-key",
-              "models": ["anthropic/claude-4.5-sonnet"]
-            }
-          ]
-      }
-    }
-    ```
+
     lmstudio (localhost) example:
     ```json
     {
@@ -56,6 +43,7 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
       }
     }
     ```
+    
     ollama (localhost) example:
     ```json
     {
@@ -69,6 +57,22 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
             "baseUrl": "http://localhost:11434/v1"
           }
         ]
+      }
+    }
+    ```
+
+    fetch from api provider example:
+    ```json
+    {
+      "coder": {
+          "providers": [
+            {
+              "name": "openrouter",
+              "baseUrl": "https://openrouter.ai/api/v1",
+              "apiKey": "your-api-key",
+              "models": ["anthropic/claude-4.5-sonnet"]
+            }
+          ]
       }
     }
     ```
