@@ -61,7 +61,7 @@ Shipped to [vscode marketplace](https://marketplace.visualstudio.com/items?itemN
     }
     ```
 
-    fetch from api provider example:
+    fetch from any api provider, see example below:
     ```json
     {
       "coder": {
@@ -101,6 +101,7 @@ npm install
 npm run build
 
 # Watch mode (rebuilds on change)
+
 # Terminal 1:
 npm run watch:webview
 
