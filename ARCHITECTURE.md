@@ -1,4 +1,4 @@
-# Progress Reporting Architecture
+# Progress Reporting Architecture (Proposed)
 
 ## Data Flow Diagram
 
