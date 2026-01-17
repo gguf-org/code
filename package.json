@@ -2,7 +2,7 @@
 	"name": "gguf-code",
 	"displayName": "gguf code",
 	"description": "Monster coding agent lives in your IDE",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"publisher": "gguf",
 	"author": {
 		"name": "gguf",
@@ -95,6 +95,7 @@
 	"dependencies": {
 		"@ai-sdk/openai-compatible": "^2.0.4",
 		"@modelcontextprotocol/sdk": "^1.25.2",
+		"@types/react-syntax-highlighter": "^15.5.13",
 		"@types/turndown": "^5.0.6",
 		"@vscode/webview-ui-toolkit": "^1.4.0",
 		"ai": "^6.0.23",
@@ -105,6 +106,7 @@
 		"react": "^19.2.3",
 		"react-dom": "^19.2.3",
 		"react-markdown": "^10.1.0",
+		"react-syntax-highlighter": "^15.6.1",
 		"remark-gfm": "^4.0.1",
 		"turndown": "^7.2.2",
 		"undici": "^7.18.2",

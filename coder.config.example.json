@@ -6,7 +6,7 @@
                 "type": "openai",
                 "models": [
                     "gpt-4-turbo",
-                    "gpt-4o"
+                    "gpt-5-mini"
                 ],
                 "config": {
                     "apiKey": "sk-..."
